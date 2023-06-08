@@ -6,13 +6,20 @@ A Store CRUD with Django.
 This CRUD application is designed to practice and demonstrate the basic concepts of Django, including:
 
 🔗 URLs
+
 🗄️ Models
+
 👁️ Views
+
 📄 Templates
+
 📝 Forms
+
 The request responses are returned as HTML.
 
+
 **📁 Project Structure**
+
 The CRUD consists of 3 main classes:
 
 
@@ -38,12 +45,20 @@ Models in this project utilize Foreign Keys to establish relationships and enabl
 
 
 **🚀 Getting Started**
+
 To get started with this Store CRUD project:
 
+
 Ensure you have Django installed.
+
 Clone this repository to your local machine.
+
 Run the Django development server.
+
 Access the application in your web browser.
+
 Feel free to modify and enhance the project as needed!
+
+
 
 If you have any questions or need further assistance, please don't hesitate to reach out.
