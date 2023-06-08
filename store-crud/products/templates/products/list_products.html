@@ -1,0 +1,31 @@
+{% extends 'layout/index.html' %}
+
+{% block content %}
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        {% for producto in productos %}
+        <tr>
+            <td>{{producto.name}}</td>
+            <td>{{producto.description}}</td>
+            <td>{{producto.price}}</td>
+            <td>
+                <button>
+                    <a href="/products/{{campaing_id}}/{{producto.id}}/delete">Delete</a>
+                </button>
+                <button href="">
+                    Edit
+                </button>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <button>
+        <a href="/products/{{campaing_id}}/new">Add</a>
+    </button>
+{% endblock %}
