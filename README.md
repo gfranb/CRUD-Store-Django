@@ -1,17 +1,40 @@
 # store-crud
-A store crud with Django.
+🏬 Store-CRUD
+A Store CRUD with Django.
 
-This CRUD is made to practice the basic concepts of Django as are URLS, MODELS, VIEWS, TEMPLATES, FORMS.
+This CRUD application is designed to practice and demonstrate the basic concepts of Django, including:
 
-The request responses are returned as HTML
+🔗 URLs
+🗄️ Models
+👁️ Views
+📄 Templates
+📝 Forms
+The request responses are returned as HTML.
 
-The CRUD have 3 classes. Category -> Campaing -> Product.
+📁 Project Structure
+The CRUD consists of 3 main classes:
 
-As Category is a super class of Campaing, and Campaing is a super class of Product.
+📦 Category
+🚩 Campaign
+🛍️ Product
+Relationships between classes:
 
-Each Category can have one or more Campaing.
-Each Campaing can have one or more Product.
+📦 Category is a superclass of 🚩 Campaign.
+🚩 Campaign is a superclass of 🛍️ Product.
+Each 📦 Category can have one or more 🚩 Campaigns.
+Each 🚩 Campaign can have one or more 🛍️ Products.
 
-In way to do a new entry a category and a campaing is needed.
+In order to create a new entry, both a 📦 Category and a 🚩 Campaign are required.
 
-Each model save the Foreing Key of the super class in order to have a filter and have data realtion.
+Models in this project utilize Foreign Keys to establish relationships and enable filtering.
+
+🚀 Getting Started
+To get started with this Store CRUD project:
+
+Ensure you have Django installed.
+Clone this repository to your local machine.
+Run the Django development server.
+Access the application in your web browser.
+Feel free to modify and enhance the project as needed!
+
+If you have any questions or need further assistance, please don't hesitate to reach out.
