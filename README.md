@@ -1,5 +1,5 @@
 # store-crud
-🏬 Store-CRUD
+**🏬 Store-CRUD**
 
 A Store CRUD with Django.
 
@@ -12,7 +12,7 @@ This CRUD application is designed to practice and demonstrate the basic concepts
 📝 Forms
 The request responses are returned as HTML.
 
-📁 Project Structure
+**📁 Project Structure**
 The CRUD consists of 3 main classes:
 
 
@@ -37,7 +37,7 @@ In order to create a new entry, both a 📦 Category and a 🚩 Campaign are req
 Models in this project utilize Foreign Keys to establish relationships and enable filtering.
 
 
-🚀 Getting Started
+**🚀 Getting Started**
 To get started with this Store CRUD project:
 
 Ensure you have Django installed.
