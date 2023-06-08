@@ -1,5 +1,6 @@
 # store-crud
 🏬 Store-CRUD
+
 A Store CRUD with Django.
 
 This CRUD application is designed to practice and demonstrate the basic concepts of Django, including:
