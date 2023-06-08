@@ -6,13 +6,9 @@ A Store CRUD with Django.
 This CRUD application is designed to practice and demonstrate the basic concepts of Django, including:
 
     🔗 URLs
-
     🗄️ Models
-
     👁️ Views
-
     📄 Templates
-
     📝 Forms
 
 The request responses are returned as HTML.
@@ -32,11 +28,8 @@ Relationships between classes:
 
 
     📦 Category is a superclass of 🚩 Campaign.
-
     🚩 Campaign is a superclass of 🛍️ Product.
-
     Each 📦 Category can have one or more 🚩 Campaigns.
-
     Each 🚩 Campaign can have one or more 🛍️ Products.
 
 
