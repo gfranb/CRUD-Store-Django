@@ -5,15 +5,15 @@ A Store CRUD with Django.
 
 This CRUD application is designed to practice and demonstrate the basic concepts of Django, including:
 
-🔗 URLs
+    🔗 URLs
 
-🗄️ Models
+    🗄️ Models
 
-👁️ Views
+    👁️ Views
 
-📄 Templates
+    📄 Templates
 
-📝 Forms
+    📝 Forms
 
 The request responses are returned as HTML.
 
@@ -23,19 +23,21 @@ The request responses are returned as HTML.
 The CRUD consists of 3 main classes:
 
 
-📦 Category
-🚩 Campaign
-🛍️ Product
+    📦 Category
+    🚩 Campaign
+    🛍️ Product
+    
+    
 Relationships between classes:
 
 
-📦 Category is a superclass of 🚩 Campaign.
+    📦 Category is a superclass of 🚩 Campaign.
 
-🚩 Campaign is a superclass of 🛍️ Product.
+    🚩 Campaign is a superclass of 🛍️ Product.
 
-Each 📦 Category can have one or more 🚩 Campaigns.
+    Each 📦 Category can have one or more 🚩 Campaigns.
 
-Each 🚩 Campaign can have one or more 🛍️ Products.
+    Each 🚩 Campaign can have one or more 🛍️ Products.
 
 
 In order to create a new entry, both a 📦 Category and a 🚩 Campaign are required.
