@@ -31,3 +31,21 @@ def add_campaing(request,category_id):
             category_id = category_id
             )
         return redirect(f"/campaings/{category_id}")
+    
+def edit_campaing(request, category_id, campaing_id):
+    if request.method == 'GET':
+        campaing_queryset = Campaing.objects.filter(id = campaing_id)
+        if(campaing_queryset.exists()):
+            campaing = campaing_queryset.first()
+            initial_data = {
+                'name' : campaing.name,
+            }
+        return render(request, "campaings/edit_campaing.html",{
+            'form': CreateNewCampaing(initial=initial_data),
+        })
+    else:
+        if request.method == 'POST' and request.POST.get('_method') == 'PUT':
+            Campaing.objects.filter(id = campaing_id).update(
+                name = request.POST['name']
+            )
+        return redirect(f'/campaings/{category_id}')

@@ -36,6 +36,27 @@ def new_product(request, campaing_id):
         return redirect(f'/products/{campaing_id}')
     
 def delete_product(request,campaing_id,product_id):
-
     Product.objects.filter(id = product_id).delete()
     return redirect(f'/products/{campaing_id}')
+
+def edit_product(request,campaing_id,product_id):
+    if request.method == 'GET':
+        product_queryset = Product.objects.filter(id = product_id)
+        if(product_queryset.exists()):
+            product = product_queryset.first()
+            initial_data = {
+                'name' : product.name,
+                'description' : product.description,
+                'price': product.price
+            }
+        return render(request, "products/edit_product.html",{
+            'form': CreateNewProduct(initial=initial_data),
+        })
+    else:
+        if request.method == 'POST' and request.POST.get('_method') == 'PUT':
+            Product.objects.filter(id = product_id).update(
+                name = request.POST['name'],
+                description = request.POST['description'],
+                price = request.POST['price']
+            )
+        return redirect(f'/products/{campaing_id}')
