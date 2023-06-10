@@ -7,6 +7,7 @@
             <th>Name</th>
             <th>Description</th>
             <th>Price</th>
+            <th>Campaing ID</th>
             <th>Action</th>
         </tr>
         {% for producto in productos %}
@@ -14,12 +15,13 @@
             <td>{{producto.name}}</td>
             <td>{{producto.description}}</td>
             <td>{{producto.price}}</td>
+            <td>{{producto.campaing_id}}</td>
             <td>
                 <button>
-                    <a href="/products/{{campaing_id}}/{{producto.id}}/delete">Delete</a>
+                    <a href="/products/{{producto.campaing_id}}/{{producto.id}}/delete">Delete</a>
                 </button>
-                <button href="">
-                    Edit
+                <button>
+                    <a href="/products/{{producto.campaing_id}}/{{producto.id}}/edit">Edit</a>
                 </button>
             </td>
         </tr>
