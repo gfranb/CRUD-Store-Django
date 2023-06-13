@@ -58,4 +58,6 @@ Python Version: 3.10.7
 Django Version 4.2.2
 Pip Version 23.1.2
 
+    Execute the command python manage.py runserver in the store-crud root
+
 If you have any questions or need further assistance, please don't hesitate to reach out.
