@@ -54,6 +54,8 @@ Access the application in your web browser.
 
 Feel free to modify and enhance the project as needed!
 
-
+Python Version: 3.10.7
+Django Version 4.2.2
+Pip Version 23.1.2
 
 If you have any questions or need further assistance, please don't hesitate to reach out.
