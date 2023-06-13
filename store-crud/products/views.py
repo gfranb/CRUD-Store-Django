@@ -36,7 +36,7 @@ def new_product(request, campaing_id):
             campaing_id = campaing_id
             )
         return redirect(f'/products/{campaing_id}')
-    
+
 def delete_product(request,campaing_id,product_id):
     Product.objects.filter(id = product_id).delete()
     return redirect(f'/products/{campaing_id}')

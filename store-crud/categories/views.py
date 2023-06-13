@@ -18,7 +18,7 @@ def add_category(request):
             name = request.POST["name"]
         )
         return redirect("/categories/")
-        
+
 def delete_category(request,category_id):
     Category.objects.filter(id = category_id).delete()
     return redirect("/categories/")

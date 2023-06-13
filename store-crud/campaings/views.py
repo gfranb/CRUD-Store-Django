@@ -16,7 +16,7 @@ def campaings_by_category(request, category_id):
         'category_id': category_id,
         'nofilter': True
     })
-    
+
 def delete_campaing(request, category_id, campaing_id):
     Campaing.objects.filter(id = campaing_id).delete()
     return redirect(f'/campaings/{category_id}')
@@ -33,7 +33,7 @@ def add_campaing(request,category_id):
             category_id = category_id
             )
         return redirect(f"/campaings/{category_id}")
-    
+
 def edit_campaing(request, category_id, campaing_id):
     if request.method == 'GET':
         campaing_queryset = Campaing.objects.filter(id = campaing_id)
