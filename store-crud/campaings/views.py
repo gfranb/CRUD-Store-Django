@@ -6,13 +6,15 @@ from .forms import CreateNewCampaing
 # Create your views here.
 def campaings(request):
     return render(request,'campaings/list_campaings.html',{
-        'campaings': Campaing.objects.all()
+        'campaings': Campaing.objects.all(),
+        'nofilter': False
     })
 
 def campaings_by_category(request, category_id):
     return render(request,'campaings/list_campaings.html',{
         'campaings': Campaing.objects.filter( category_id = category_id),
-        'category_id': category_id
+        'category_id': category_id,
+        'nofilter': True
     })
     
 def delete_campaing(request, category_id, campaing_id):

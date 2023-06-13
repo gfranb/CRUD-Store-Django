@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,24 +8,21 @@
         <title>STORE CRUD | BY GIANFRANCO BONANNO</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/categories/">Categories</a>
-                </li>
-                <li>
-                    <a href="/campaings/">Campaings</a>
-                </li>
-                <li>
-                    <a href="/products/">Products</a>
-                </li>
-            </ul>
-        </nav>
-        {% block content %}
-        {% endblock %}
-        <script src="" async defer></script>
+        <header>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="/categories/">Categories</a></li>
+                    <li><a href="/campaings/">Campaings</a></li>
+                    <li><a href="/products/">Products</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
     </body>
 </html>

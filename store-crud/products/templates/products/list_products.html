@@ -17,17 +17,19 @@
             <td>{{producto.price}}</td>
             <td>{{producto.campaing_id}}</td>
             <td>
-                <button>
+                <button class="button">
                     <a href="/products/{{producto.campaing_id}}/{{producto.id}}/delete">Delete</a>
                 </button>
-                <button>
-                    <a href="/products/{{producto.campaing_id}}/{{producto.id}}/edit">Edit</a>
+                <button class="button_edit">
+                    <a href="/products/{{producto.campaing_id}}/edit/{{producto.id}}">Edit</a>
                 </button>
             </td>
         </tr>
         {% endfor %}
     </table>
-    <button>
+    {% if nofilter %}
+    <button class="button_add">
         <a href="/products/{{campaing_id}}/new">Add</a>
     </button>
+    {% endif %}
 {% endblock %}

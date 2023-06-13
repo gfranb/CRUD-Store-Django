@@ -9,20 +9,19 @@
         </tr>
         {% for category in categories %}
         <tr>
+            <td><a href="/campaings/{{category.id}}">{{category.name}}</a></td>
             <td>
-                <a href="/campaings/{{category.id}}">{{category.name}}</a></td>
-            <td>
-                <button>
+                <button class="button">
                     <a href="/categories/{{category.id}}/delete">Delete</a>
                 </button>
-                <button>
+                <button class="button_edit">
                     <a href="/categories/{{category.id}}/edit">Edit</a>
                 </button>
             </td>
         </tr>
         {% endfor %}
     </table>
-    <button>
+    <button class="button_add">
         <a href="/categories/new">Add</a>
     </button>
 {% endblock %}

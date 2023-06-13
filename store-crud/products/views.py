@@ -8,13 +8,15 @@ from .forms import CreateNewProduct
 
 def products(request):
     return render(request, "products/list_products.html", {
-        'productos': Product.objects.all()
+        'productos': Product.objects.all(),
+        'nofilter': False
     })
 
 def products_by_campaing(request,campaing_id):
     return render(request, "products/list_products.html", {
         'productos': Product.objects.filter(campaing_id = campaing_id),
-        'campaing_id': campaing_id
+        'campaing_id': campaing_id,
+        'nofilter': True
     })
 
 def modificar_products(request):

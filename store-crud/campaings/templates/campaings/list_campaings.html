@@ -9,20 +9,22 @@
         </tr>
         {% for campaing in campaings %}
         <tr>
+            <td><a href="/products/{{campaing.id}}">{{campaing.name}}</a></td>
             <td>
-                <a href="/products/{{campaing.id}}">{{campaing.name}}</a></td>
-            <td>
-                <button>
-                    <a href="/campaings/{{category_id}}/{{campaing.id}}/delete">Delete</a>
+                <button class="button">
+                    <a href="/campaings/{{campaing.category_id}}/{{campaing.id}}/delete">Delete</a>
                 </button>
-                <button>
-                    <a href="/campaings/{{category_id}}/{{campaing.id}}/edit">Edit</a>
+                <button class="button_edit">
+                    <a href="/campaings/{{campaing.category_id}}/{{campaing.id}}/edit">Edit</a>
                 </button>
             </td>
         </tr>
         {% endfor %}
     </table>
-    <button>
+
+    {% if nofilter %}
+    <button class="button_add">
         <a href="/campaings/{{category_id}}/new">Add</a>
     </button>
+    {% endif %}
 {% endblock %}
