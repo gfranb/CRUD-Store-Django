@@ -60,4 +60,6 @@ Pip Version 23.1.2
 
     Execute the command python manage.py runserver in the store-crud root
 
+The project will open in the localhost 8000 port.
+
 If you have any questions or need further assistance, please don't hesitate to reach out.
